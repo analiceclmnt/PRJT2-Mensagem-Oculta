@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codificador</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="=shortcut icon" href="imagens/logo.png" type="image/x-icon">
+    
+</head>
+<body>
+<main class="main container">
+    <header class="topo">
+        <img src="imagens/logo2.png" alt="Logo">
+        <h1>Texto Codificado</h1>
+</header>
+
+
+<div class="container-input">
+    <div class="input">
+        <textarea id="input-texto" placeholder="Digite aqui seu texto..."></textarea>
+        <p>ATENÇÃO: Insira apenas letras maiúsculas e sem acento</p>
+    </div>
+   
+<div id="output">
+    <img src="imagens/giphy.gif" alt="carregando">
+    <h2>Sua mensagem aparecerá aqui!</h2>
+    <span>Vamos nos divertir um pouco ... </span>
+</div>
+</div>
+
+<div class="buttons">
+    <div class="container-btn">
+        <button onclick="criptografar()"class="btn-criptografar">CRIPTOGRAFAR</button>
+        <button onclick="descriptografar()" class="btn-descriptografar">DESCRIPTOGRAFAR</button>
+    </div>
+<div class="selecao">
+    <fieldset>
+        <select class="metodo" required>
+        <option>Escolha o Método</option>
+        <option>Cifra de Cesar</option>
+        <option>Base 64</option>
+        </select>
+    </fieldset>
+</div>
+</main>
+
+
+    <footer></footer>
+
+
+    <script src="codigo.js"></script>
+    
+</body>
+</html>
